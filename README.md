@@ -1,123 +1,85 @@
-markdown
-
 # 💰 Monthly Income Simulator
 
 ![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)
 ![Python Version](https://img.shields.io/badge/python-3.7%2B-blue)
 
-A interactive web application for simulating and visualizing monthly income patterns, built with Streamlit.
+An interactive web application for simulating monthly income patterns with customizable parameters.
+
+## 📌 Table of Contents
+- [Features](#-features)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Examples](#-examples)
+- [Deployment](#-deployment)
+- [Contributing](#-contributing)
+- [License](#-license)
 
 ## 🌟 Features
 
-- **Customizable income simulation**:
-  - Set weekday and weekend daily income
-  - Specify non-working weekdays
-  - Select any month and year
+- **Customizable Income Simulation**
+  - Set different rates for weekdays vs weekends
+  - Specify number of non-working weekdays
+  - Select any month/year combination
 
-- **Interactive visualizations**:
-  - Daily income bar chart (color-coded by day type)
-  - Cumulative income line graph
-  - ±$100 daily income comparison
+- **Interactive Visualizations**
+  - Daily income breakdown (bar chart)
+  - Cumulative income tracker (line graph)
+  - Scenario comparison (±$100 variations)
 
-- **Comprehensive summary**:
-  - Total monthly income
-  - Average daily income (working days only)
-  - Working/non-working day counts
-  - Daily income range
+- **Comprehensive Analytics**
+  - Total monthly income calculation
+  - Average daily income (working days)
+  - Working/non-working day statistics
 
-## 🚀 Quick Start
+## 🛠️ Installation
 
-1. **Install dependencies**:
-   ```bash
-   pip install streamlit pandas numpy matplotlib
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/income-simulator.git
+cd income-simulator
 
-    Run the application:
-    bash
+    Install dependencies:
 
-    streamlit run simulador_ingresos.py
+bash
 
-    Access the app:
+pip install -r requirements.txt
 
-        The application will automatically open in your default browser
+🚀 Usage
 
-        Or visit http://localhost:8501
+Run the application:
+bash
 
-🖥️ Usage Guide
-Sidebar Controls
+streamlit run simulador_ingresos.py
 
-    Month/Year: Select the simulation period
+Configure your simulation:
 
-    Weekday Income: Set daily income for Monday-Friday
+    Select month and year
 
-    Weekend Income: Set daily income for Saturday-Sunday
+    Set weekday and weekend rates
 
-    Non-working Days: Number of weekdays with no income
+    Specify non-working days
 
-Visualization Tabs
+    View results in interactive tabs
 
-    Daily Income: Bar chart showing income each day
+📊 Examples
 
-    Cumulative Sum: Line graph of running monthly total
-
-    ±$100 Comparison: Scenario analysis with income variations
-
-Key Metrics
-
-    Total monthly income
-
-    Average daily income (working days)
-
-    Count of working/non-working days
-
-    Daily income range (min-max)
-
-📊 Example Output
-
+Daily Income View
 https://i.imgur.com/JQ8wzEj.png
-🛠️ Technical Details
 
-Built with:
+Cumulative Income
+https://i.imgur.com/9LkQY2a.png
+🌐 Deployment
+Streamlit Sharing
 
-    Python 3.7+
+    Push to GitHub
 
-    Streamlit (web framework)
+    Connect at share.streamlit.io
 
-    Pandas (data manipulation)
+Docker
+bash
 
-    Matplotlib (visualization)
-
-    NumPy (numerical operations)
-
-File Structure:
-text
-
-income-simulator/
-├── simulador_ingresos.py  # Main application code
-├── README.md              # This documentation
-└── requirements.txt       # Dependencies
-
-🌐 Deployment Options
-
-    Streamlit Sharing (easiest):
-
-        Upload to GitHub
-
-        Connect repository at share.streamlit.io
-
-    Docker Container:
-    dockerfile
-
-    FROM python:3.9-slim
-    WORKDIR /app
-    COPY . .
-    RUN pip install -r requirements.txt
-    CMD ["streamlit", "run", "simulador_ingresos.py"]
-
-    Traditional Hosting:
-
-        Requires WSGI server setup
-
-        Use NGINX/Apache as reverse proxy
+docker build -t income-simulator .
+docker run -p 8501:8501 income-simulator
 
 🤝 Contributing
 
@@ -125,17 +87,17 @@ income-simulator/
 
     Create your feature branch (git checkout -b feature/AmazingFeature)
 
-    Commit your changes (git commit -m 'Add some amazing feature')
+    Commit changes (git commit -m 'Add feature')
 
-    Push to the branch (git push origin feature/AmazingFeature)
+    Push to branch (git push origin feature/AmazingFeature)
 
-    Open a Pull Request
+    Open Pull Request
 
 📜 License
 
-Distributed under the MIT License. See LICENSE for more information.
+MIT License - see LICENSE for details
 ✉️ Contact
 
-Your Name - walter.garciaortiz@gmail.com
+Project Maintainer - Your Name
 
-Project Link: https://github.com/waltgarcia/income-simulator
+Project Link: https://github.com/yourusername/income-simulator
