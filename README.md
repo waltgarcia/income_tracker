@@ -40,6 +40,7 @@ An interactive web application for simulating monthly income patterns with custo
 
 ---
 
+
 ## 🛠️ Installation
 
 1. **Clone the repository:**
