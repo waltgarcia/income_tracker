@@ -1,23 +1,32 @@
+Here’s a more organized, professional, and clear structure for your README.md. I’ve improved formatting, clarified instructions, fixed inconsistencies, and added missing code blocks and section links. You can copy and replace your current README.md with the following:
+
+```markdown
 # 💰 Monthly Income Simulator
 
-![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://streamlit.io/)
 ![Python Version](https://img.shields.io/badge/python-3.7%2B-blue)
 
 An interactive web application for simulating monthly income patterns with customizable parameters.
 
+---
+
 ## 📌 Table of Contents
-- [Features](#-features)
-- [Installation](#-installation)
-- [Usage](#-usage)
-- [Examples](#-examples)
-- [Deployment](#-deployment)
-- [Contributing](#-contributing)
-- [License](#-license)
+
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Examples](#examples)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+---
 
 ## 🌟 Features
 
 - **Customizable Income Simulation**
-  - Set different rates for weekdays vs weekends
+  - Set different rates for weekdays vs. weekends
   - Specify number of non-working weekdays
   - Select any month/year combination
 
@@ -31,73 +40,95 @@ An interactive web application for simulating monthly income patterns with custo
   - Average daily income (working days)
   - Working/non-working day statistics
 
+---
+
 ## 🛠️ Installation
 
-1. Clone the repository:
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/waltgarcia/income_tracker.git
+   cd income_tracker
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+---
+
+## 🚀 Usage
+
+Run the application with Streamlit:
 ```bash
-git clone https://github.com/yourusername/income-simulator.git
-cd income-simulator
-
-    Install dependencies:
-
-bash
-
-pip install -r requirements.txt
-
-🚀 Usage
-
-Run the application:
-bash
-
 streamlit run simulador_ingresos.py
+```
 
-Configure your simulation:
+**Configure your simulation:**
+- Select month and year
+- Set weekday and weekend rates
+- Specify non-working days
+- View results in interactive tabs
 
-    Select month and year
+---
 
-    Set weekday and weekend rates
+## 📊 Examples
 
-    Specify non-working days
+**Daily Income View**
 
-    View results in interactive tabs
+![Daily Income View](https://i.imgur.com/JQ8wzEj.png)
 
-📊 Examples
+**Cumulative Income**
 
-Daily Income View
-https://i.imgur.com/JQ8wzEj.png
+![Cumulative Income](https://i.imgur.com/9LkQY2a.png)
 
-Cumulative Income
-https://i.imgur.com/9LkQY2a.png
-🌐 Deployment
-Streamlit Sharing
+---
 
-    Push to GitHub
+## 🌐 Deployment
 
-    Connect at share.streamlit.io
+### Streamlit Community Cloud
 
-Docker
-bash
+1. Push your code to GitHub.
+2. Deploy at [share.streamlit.io](https://share.streamlit.io/).
 
+### Docker
+
+Build and run with Docker:
+```bash
 docker build -t income-simulator .
 docker run -p 8501:8501 income-simulator
+```
 
-🤝 Contributing
+---
 
-    Fork the project
+## 🤝 Contributing
 
-    Create your feature branch (git checkout -b feature/AmazingFeature)
+1. Fork the project
+2. Create your feature branch  
+   ```bash
+   git checkout -b feature/AmazingFeature
+   ```
+3. Commit your changes  
+   ```bash
+   git commit -m 'Add AmazingFeature'
+   ```
+4. Push to the branch  
+   ```bash
+   git push origin feature/AmazingFeature
+   ```
+5. Open a Pull Request
 
-    Commit changes (git commit -m 'Add feature')
+---
 
-    Push to branch (git push origin feature/AmazingFeature)
+## 📜 License
 
-    Open Pull Request
+MIT License – see [LICENSE](LICENSE) for details
 
-📜 License
+---
 
-MIT License - see LICENSE for details
-✉️ Contact
+## ✉️ Contact
 
-Project Maintainer - Your Name
+Project Maintainer – Walter García 
+Project Link: [https://github.com/waltgarcia/income_tracker](https://github.com/waltgarcia/income_tracker)
 
-Project Link: https://github.com/yourusername/income-simulator
+```
